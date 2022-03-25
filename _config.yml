@@ -214,7 +214,12 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
-
+      article_header:
+        type: overlay
+        theme: dark
+        background_color: "#336666"
+        background_image:
+          gradient: "linear-gradient(135deg, rgba(45, 12, 19, .4), rgba(19, 44, 51, .5))"
 
 ## => Plugins
 ##############################

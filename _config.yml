@@ -102,7 +102,7 @@ paginate_path: /page:num # don't change this unless for special need
 
 ## => Sources
 ##############################
-sources: # bootcdn (default), unpkg
+sources: bootcdn # bootcdn (default), unpkg
 
 
 ## => Sharing
@@ -118,7 +118,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: disqus # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: valine # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:

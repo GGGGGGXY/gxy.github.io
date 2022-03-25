@@ -4,7 +4,6 @@ tags: ['大模型训练', 'NLP', '机器学习']
 ---
 
 
-
 随着预训练语言模型的提出，自然语言处理进入了全新的时代。在更丰富的数据集，参数量更大的模型，不仅仅是在各种下游任务上取得了SOTA的效果，更是在一些任务上已经过超过人类。然而随着模型变大，机器资源在一定程度上却没有跟上，在训练、微调的过程中也存在诸多问题，大多数使用者并没有庞大的计算资源，那么如何在有限的资源上，让你的模型训练尽可能的快呢，就让本文带你进入大模型训练的世界。
 
 本文将以Finetune[**封神榜开源模型-二郎神**](https://huggingface.co/IDEA-CCNL/Erlangshen-1.3B)为例，如何快速Finetune这个13亿参数的模型(1.3B parameters = 24 layers, 2048 hidden size, 8 attention heads)
@@ -218,10 +217,12 @@ Epoch 0:   3% 1000/38924 [45:51<28:59:25,  2.75s/it, loss=2.07, v_num=107671]
 
 
 那么回到刚刚Deepspeed zero_stage_0，仅需要30分钟即可跑完一个epoch了，在这个基础上我们还有优化空间吗？答案是肯定的，我们可以通过使用更优化的Optimizer来提升我们的训练速度。比如说：
+
 - 谷歌提出的[Lamb](https://arxiv.org/abs/1904.00962)
 - 微软提出的[OneBitLamb](https://arxiv.org/abs/2104.06069)
 - 微软提出的[OneBitAdam](https://arxiv.org/abs/2102.02888)
 - 微软提出的[ZeroOneAdam](https://arxiv.org/abs/2202.06009)
+
 在以后的系列文章中，我们也会为大家一一介绍这些Optimizer的实现以及实际使用的效果，欢迎Follow我们的专栏。
 
 

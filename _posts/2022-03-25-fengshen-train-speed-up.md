@@ -1,6 +1,7 @@
 ---
 title: 如何给你的大模型训练加速
 tags: ['大模型训练', 'NLP', '机器学习']
+key: fengshen-speed-up
 ---
 
 

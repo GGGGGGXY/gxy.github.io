@@ -32,6 +32,9 @@
       .linkedin-button {
         @include clickable($text-color-1, $linkedin-color);
       }
+      .huggingface-button {
+        @include clickable($text-color-1, $huggingface-color);
+      }
       .github-button {
         @include clickable($text-color-1, $github-color);
       }
